@@ -39,3 +39,39 @@ ul {
 ul li {
     margin: 20px;
 }
+
+/********Botão expandir*****/
+:root {
+    interpolate-size: allow-keywords;
+  }
+.accordion {
+    background: #e7a4a4;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+  }
+  
+  .accordion-toggle {
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor:pointer;
+    font-size: 16px;
+  }
+  
+  .accordion-content {
+    height: 0;
+    overflow: hidden;
+    transition: height 1.0s ease-in-out;
+  }
+  
+  .accordion-content.open {
+    height: auto;
+  }
+  .accordion-content.open p {
+    text-align: justify;
+    margin-top: 10px;
+  }
